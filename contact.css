@@ -1,0 +1,232 @@
+@font-face {
+  font-family: aston;
+  src: url("fonts/aston.ttf");
+}
+
+@font-face {
+  font-family: adel;
+  src: url("fonts/adel.otf");
+}
+
+@font-face {
+  font-family: kidpop;
+  src: url("fonts/kidpop.ttf");
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: #FEF3F1;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  margin-left: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #D38C9D, #9D182B);
+}
+
+.content {
+  padding: 100px 20px;
+}
+.name {
+  color: #FEF3F1;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  font-family: 'Squada One', sans-serif;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  gap: 20px
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #FCE8ED;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 15px;
+  background: linear-gradient(135deg, #D38C9D, #9D182B);
+}
+
+.connect {
+  margin: 0;
+  font-family: 'Squada One', sans-serif;
+  font-size: 20px;
+  color: #FEF3F1;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icons a {
+  font-size: 24px;
+  color: #FEF3F1;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #FCE8ED;
+}
+
+.c {
+  margin-right: 25px;
+  margin-bottom: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  color: #FEF3F1;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: aston;
+  font-size: 50px;
+  color: #9E182B;
+}
+
+p {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #9E182B;
+}
+
+.contact {
+  background-color: #FCE8ED;
+  border: 3px solid #9D182B;
+  border-radius: 20px;
+  padding: 25px;
+  width: 500px;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 2px solid #D38C9D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #9E182B;
+  box-shadow: 0 0 8px rgba(157, 24, 43, 0.3);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #b06a7a;
+}
+
+.contact textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: #9E182B;
+  color: #FEF3F1;
+  border: none;
+  border-radius: 15px;
+  font-family: kidpop;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #D38C9D;
+  color: #9D182B;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 2px solid #D38C9D;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 50px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .navlinks li a {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .content {
+    padding: 50px 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+  footer {
+    height: 40px;
+    padding: 10px 0px;
+    gap: 5px;
+  }
+  .connect {
+    font-size: 12px;
+  }
+  .icons a {
+    font-size: 12px;
+  }
+  .c {
+    font-size: 5px;
+    margin-top: 0px;
+    margin-right: 7px;
+  }
+  .contact {
+    width: 250px;
+  }
+}
